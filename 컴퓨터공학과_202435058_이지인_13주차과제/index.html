@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #page{
+            width:900px;
+            height:800px;
+            margin:0 auto;
+            background-color:#f1ece3;
+        }/*페이지 전체 옵션*/
+
+        .clear{
+            clear:both;
+        }
+/*------------------------------------------------------------------------*/
+/*header 옵션*/
+        #logo{
+            margin-top:10px;
+            float:left;
+        }
+
+        #little_menu{
+            margin:25px 10px 0 0;
+            float:right;
+        }
+
+        #little_menu ul li{
+            display:inline;
+            font-family:"돋움";
+            font-size:14px;
+        }
+
+        #menu{
+            border-bottom:solid 1px black;
+        }
+        
+        #menu ul{
+            margin-top:30px;
+        }
+        #menu ul li{
+            font-weight:bold;
+            display:inline;
+            padding:5px 5px 5px 80px;
+            list-style-type:none;
+        }
+/*----------------------------------------------------------------------------*/
+/*main 옵션*/
+        main{
+            height:530px;
+            margin-top:30px;
+            border-bottom:solid 1px black;
+        }
+        aside{
+            width:200px;
+            height:500px;
+            float:left;
+        }
+
+        main article{
+            float:left;
+            width:475px;
+            height:250px;
+            margin-left:10px;
+        }
+
+        main article ul{
+            text-align:center;
+        }
+
+        main article li{
+            list-style-type:none;
+        }
+
+        .red{
+            color:red;
+            font-size:12px;
+            font-weight:bold;
+            text-decoration:underline;
+        }
+
+        section{
+            width:200px;
+            height:500px;
+            margin-left:700px;
+            font-size:12px;
+        }
+        
+        section h1{
+            text-align:center;
+            text-decoration:underline;
+        }
+
+        section h5{
+            font-weight:bold;
+            text-decoration:underline;
+            padding-left:20px;
+        }
+        section img{
+            border:solid 2px black;
+            border-radius:3px;
+            margin-left:9px;
+        }
+/*-----------------------------------------------------------------------------------------*/
+/*footer 옵션*/
+       footer{
+        width:900px;
+        height:250px;
+       }
+
+       p{
+        font-family:"맑은 고딕";
+       }
+
+       #fon{
+        text-decoration:underline;
+        font-weight:bold;
+       }
+
+       #pos{
+        float:right;
+        width:200px;
+        height:75px;
+       }
+
+       #pos ul li{
+        text-align:center;
+        list-style-type:none;
+       }
+
+       #pos ul li img{
+        margin-top:5px;
+        display:inline;
+       }
+/*-------------------------------------------------------------------------------------------------*/
+/*반응형 웹 사이트 옵션*/
+    @media only screen and (max-width:920px){
+       #page{
+        width:100%;
+        height:auto;
+       }
+
+       header, main, footer{
+        width:100%;
+       }
+
+       #menu ul li{
+        display:block;
+        text-align:center;
+        padding:10px 0;
+       }
+
+       #logo, #little_menu{
+        display:block;
+        text-align:center;
+        margin:10px auto;
+       }
+
+       #little_menu ul li{
+        display:inline-block;
+        margin:0 5px;
+       } 
+       
+       aside{
+        width:90%;
+        margin:10px auto;
+        height:auto;
+       }
+
+       main article{
+        width:90%;
+        margin:10px auto;
+        height:auto;
+       }
+
+       section{
+        width:90%;
+        margin:10px auto;
+        height:auto;
+        display:inline-block;
+       }
+
+       section img{
+        width:50%;
+        height:auto;
+        margin-left:0;
+       }
+
+       #pos{
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+       }
+
+       #pos ul li img{
+        width:30px;
+        height:auto;
+        margin:0 5px;
+       }
+
+       footer{
+        height:auto;
+        padding-top:50px;
+       } 
+
+       footer div{
+        margin-top:500px;
+        display:inline-block;
+       }
+    }
+
+    @media only screen and (max-width:480px){
+
+       section h5{
+        padding-left:10px;
+       }
+
+       article img, aside img{
+        width:100%;
+        height:auto;
+       }
+       
+    }
+/*-------------------------------------------------------------------------------------------------*/
+    </style>
+</head>
+<body id="page">
+    <header>
+        <div id="logo"><img src="img1/logo1.webp" width="200" height="75"></div>
+
+        <div id="little_menu">
+            <ul>
+                <li>로그인 |</li>
+                <li>회원가입 |</li>
+                <li>검색</li>
+            </ul>
+        </div>
+      
+        <div class="clear"></div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="page1.html" style="color:black; text-decoration:none;">성격 테스트 검사</a></li>
+                <li><a href="page2.html" style="color:black; text-decoration:none;">고양이 상식</a></li>
+                <li><a href="page3.html" style="color:black; text-decoration:none;">키우는 팁</a></li>
+                <li><a href="page4.html" style="color:black; text-decoration:none;">사진 갤러리</a></li>
+                <li><a href="page5.html" style="color:black; text-decoration:none;">입양하기</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <aside><img src="img1/배너1.png"></aside>
+
+        <article><img src="img1/center_img.png"></article>
+
+        <article>
+            <ul>
+                <li>안녕하세요 저희 사이트를 방문해 주셔서 감사합니다.</li>
+                <br>
+                <li>저희 사이트는 고양이를 위한 정보들을 모아놨습니다.</li>
+                <li>초보 집사분들을 위한 여러가지 정보들이 있습니다.</li>
+                <br>
+                <li>이미 키우고 계신 집사분들도 고양이를 위한 팁들을 확인해보고 가세요.</li>
+                <br>
+                <li>충분히 생각하고 한 생명을 책임질 자신이 있으신 분들은 입양하기 버튼을 눌러주세요.</li>
+                <li class="red">*주의*&nbsp;책임질 마음이 없으신 분들은 사진만 봐주시길 바랍니다.</li>
+            </ul>
+        </article>
+
+        <section>
+            <div>
+            <h1>★공지사항★</h1>
+            <br>
+            가게 위치를 이전했습니다.<br><br>
+            가게로 방문하실 예정인 고객분들께서는<br>
+            아래 주소를 보고 와주시길 바랍니다.<br><br>
+            앞으로 고객님들을 위해 노력하겠습니다.<br>
+            감사합니다.
+            <br><br>
+            <img src="img1/map1.png" width="180" height="180"><br>
+            <h5>주소: 대전시 라마바 사아자 12-34번지</h5><br><br>
+            문의사항: 031-0000-1111
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+        <p style="font-weight:bold;">주식회사 캣티</p>
+        <br>
+        <p>회사 소개&nbsp;&nbsp;|&nbsp; &nbsp;개인정보 처리방침&nbsp;&nbsp;| &nbsp;&nbsp;개발자 정보&nbsp;&nbsp;|&nbsp;&nbsp;
+           사업자 정보</p><br>
+        <p>대표 전화: 1588-0111</p>
+        <p>대표 이름: 이지인</p>
+        <p>전화: 010-2345-6789&nbsp;/&nbsp;(02)760-9008</p>
+        <div id="pos">
+            <ul>
+                <br>
+                <li style="font-weight:bold;">커뮤니티</li>
+                <li><img src="img1/footer_logo.png" width="40" height="20">&nbsp; 
+                    <img src="img1/footer_logo2.png" width="40" height="20">&nbsp; 
+                    <img src="img1/footer_logo3.png" width="40" height="20">
+                </li>
+            </ul>
+        </div>
+        <p>이메일: abcdef123@naver.com</p><br>
+        <span id="fon">Copyright by Catty Company All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>
