@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>고양이 상식</title>
+  <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #page{
+            width:900px;
+            height:1000px;
+            margin:0 auto;
+            background-color:#f1ece3;
+        }/*페이지 전체 옵션*/
+
+        .clear{
+            clear:both;
+        }
+/*------------------------------------------------------------------------*/
+/*header 옵션*/
+        #logo{
+            margin-top:10px;
+            float:left;
+        }
+
+        #little_menu{
+            margin:25px 10px 0 0;
+            float:right;
+        }
+
+        #little_menu ul li{
+            display:inline;
+            font-family:"돋움";
+            font-size:14px;
+        }
+
+        #menu{
+            border-bottom:solid 1px black;
+        }
+        
+        #menu ul{
+            margin-top:30px;
+        }
+        #menu ul li{
+            font-weight:bold;
+            display:inline;
+            padding:30px 30px 30px 45px;
+            list-style-type:none;
+        }
+/*--------------------------------------------------------------------------------*/
+/*main 옵션*/
+
+    .total{
+        text-align:center;
+    }
+
+    aside{
+        width:200px;
+        height:350px;
+        margin-top:10px;
+        border:solid 2px black;
+        border-radius:5px;
+    }
+
+    nav ul{
+        list-style-type:none;
+        text-align:center;
+        display:block;
+    }
+
+    .div1{
+        width:180px;
+        margin-top:40px;
+        margin-left:9px;
+        border-bottom:dotted 2px black;
+        padding-bottom:10px;
+    }
+
+    .div1 ul{
+       margin-top:10px;
+       margin-left:20px;
+    }
+
+    .div1 ul li h4{
+        padding-right:20px;
+    }
+
+    .div1 ul li a{
+        text-decoration:none;
+        color:black;
+    }
+
+    aside{
+        float:left;
+    }
+
+    article{
+        width:650px;
+        height:650px;
+        float:right;
+        border:solid 2px black;
+        border-radius:5px;
+        margin-top:10px;
+        padding-top:30px;
+    }
+
+    table{
+        width:600px; 
+        margin:45px auto; 
+        border-collapse:collapse; 
+        font-size:13px;
+    }
+
+    tr{
+        margin-top:3px;
+    }
+
+    th, td{
+        border:solid 1px grey; 
+        padding:5px 1px 5px 1px;
+        text-align:center;
+    }
+
+    .position{
+        font-weight:bold; 
+        margin-bottom:10px;
+        text-align:center;
+    }
+
+    .position1{
+        margin-top:2px;
+    }
+
+    .under{
+        text-decoration:underline;
+    }
+/*-------------------------------------------------------------------------------------------------*/
+/*반응형 웹 사이트 옵션*/
+    @media only screen and (max-width:920px){
+    #page{
+        width:100%;
+        height:auto;
+    }
+
+    header, main{
+        width:100%;
+    }
+
+    #logo, #little_menu{
+        display:block;
+        text-align:center;
+        margin:10px auto;
+    }
+
+    #little_menu ul li{
+        display:inline-block;
+        margin:0 5px;
+    }
+
+    #menu ul li{
+        display:block;
+        text-align:center;
+        padding:10px 0;
+    }
+
+    aside{
+        width:90%;
+        margin:10px auto;
+        height:auto;
+    }
+
+    nav{
+        margin:5px 15px 40px 15px;
+    }
+
+    article{
+        width:90%;
+        margin:10px auto;
+        height:auto;
+        padding-top:20px;
+    }
+
+    table{
+        width:90%;
+        font-size:13px;
+    }
+
+    th, td{
+        padding:6px 4px;
+    }
+
+    .position h5{
+        font-size:15px;
+        margin:10px 0;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+    </style> 
+</head>
+<body id="page">
+  <header>
+    <div id="logo"><img src="img1/logo1.webp" width="200" height="75"></div>
+    <div id="little_menu">
+      <ul>
+        <li>로그인 |</li>
+        <li>회원가입 |</li>
+        <li>검색</li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html" style="color:black; text-decoration:none;">메인</a></li>
+        <li><a href="page1.html" style="color:black; text-decoration:none;">성격 테스트 검사</a></li>
+        <li>고양이 상식</li>
+        <li><a href="page3.html" style="color:black; text-decoration:none;">키우는 팁</a></li>
+        <li><a href="page4.html" style="color:black; text-decoration:none;">사진 갤러리</a></li>
+        <li><a href="page5.html" style="color:black; text-decoration:none;">입양하기</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <br>
+    <h3 class="total">고양이에 대한 상식</h3>
+    <h4 class="total">방문자님은 고양이에 대해 얼마나 알고 계신가요?</h4>
+    <br>
+    <aside>
+        <nav>
+            <div class="div1">
+                <ul>
+                    <li><a href="page2.html"><h4>고양이의 수면</h4></a></li>
+                </ul>
+            </div>
+
+            <div class="div1">
+                <ul>
+                    <li class="under"><h4>몸짓 언어 해석</h4></li>
+                </ul>
+            </div>
+
+            <div class="div1">
+                <ul>
+                    <li><a href="page2_sub2.html"><h4>청각 능력</h4></a></li>
+                </ul>
+            </div>
+
+            <div class="div1">
+                <ul>
+                    <li><a href="page2_sub3.html"><h4>수염의 기능</h4></a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article>
+    <table class="position1">
+        <div class="position"><h5>꼬리</h5></div>
+            <tr>
+                <th>상태</th>
+                <th>의미</th>
+            </tr>
+
+            <tr>
+                <td>꼬리를 높이 세움</td>
+                <td>반가움, 자신감</td>
+            </tr>
+
+            <tr>
+                <td>빠르게 좌우로 흔듦</td>
+                <td>짜증, 화남</td>
+            </tr>
+    </table>
+
+    <table class="position1">
+        <div class="position"><h5>귀</h5></div>
+            <tr>
+                <th>상태</th>
+                <th>의미</th>
+            </tr>
+
+            <tr>
+                <td>앞쪽으로 세움</td>
+                <td>관심, 집중</td>
+            </tr>
+
+            <tr>
+                <td>뒤로 젖힘</td>
+                <td>불쾌감, 경계</td>
+            </tr>
+    </table>
+
+    <table class="position1">
+        <div class="position"><h5>눈</h5></div>
+            <tr>
+                <th>상태</th>
+                <th>의미</th>
+            </tr>
+
+            <tr>
+                <td>천천히 깜빡임</td>
+                <td>애정, 신뢰</td>
+            </tr>
+
+            <tr>
+                <td>동공 확장</td>
+                <td>흥분, 공포</td>
+            </tr>
+    </table>
+
+    <table class="position1">
+        <div class="position"><h5>몸 전체</h5></div>
+            <tr>
+                <th>자세</th>
+                <th>의미</th>
+            </tr>
+
+            <tr>
+                <td>배를 보이며 구르기</td>
+                <td>신뢰 또는 놀이 유도</td>
+            </tr>
+
+            <tr>
+                <td>몸을 웅크림</td>
+                <td>공포, 경계</td>
+            </tr>
+    </table>
+    </article>
+  </main>
+</body>
+</html>
