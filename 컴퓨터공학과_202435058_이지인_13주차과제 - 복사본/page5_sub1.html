@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #page{
+            width:950px;
+            height:1000px;
+            margin:0 auto;
+            background-color:#f1ece3;
+        }/*페이지 전체 옵션*/
+
+        .clear{
+            clear:both;
+        }
+
+/*-----------------------------------------------------------------------------------------*/
+/*header 옵션*/
+        #logo{
+            margin-top:10px;
+            float:left;
+        }
+
+        #little_menu{
+            margin:25px 10px 0 0;
+            float:right;
+        }
+
+        #little_menu ul li{
+            display:inline;
+            font-family:"돋움";
+            font-size:14px;
+        }
+
+        #menu{
+            border-bottom:solid 1px black;
+        }
+        
+        #menu ul{
+            margin-top:30px;
+        }
+        #menu ul li{
+            font-weight:bold;
+            display:inline;
+            padding:5px 5px 5px 70px;
+            list-style-type:none;
+        }
+/*-----------------------------------------------------------------------------------------*/
+/*main 옵션*/
+
+       #sty{
+        width:550px;
+        height:950px;
+        margin-top:10px;
+        margin-left:190px;
+       }
+
+       #sty ul{
+        list-style-type:none;
+       }
+
+       #sty ul li{
+        padding-bottom:10px;
+       }
+
+       #text{
+        text-align:center;
+        font-weight:bold;
+        margin-top:10px;
+       }
+
+       #text1{
+        text-align:center;
+        font-weight:bold;
+        margin-bottom:0px;
+       }
+
+       .line{
+        text-decoration:underline;
+       }
+
+       h3{
+        font-weight:bold;
+       }
+       
+       #place{
+        float:right;
+        margin-top:50px;
+       }
+
+       .pad{
+        padding-left:28px;
+       }
+
+       .submit{
+        float:right;
+       }
+
+       .back{
+        float:left;
+       }
+/*-----------------------------------------------------------------------------------------------*/
+/*반응형 웹 페이지 옵션*/
+    @media only screen and (max-width: 920px){
+       #page{
+        width:100%;
+        height:auto;
+       }
+
+       #sty{
+        width:90%;
+        margin-left:5%;
+        height:auto;
+       }
+
+       #place{
+        margin-top:20px;
+        width:100%;
+        text-align:left;
+       }
+
+       #place ul{
+        padding-left:10px;
+       }
+
+       #place ul li{
+        margin-bottom:10px;
+       }
+
+       .submit, .back{
+        display:inline-block;
+        width:45%;
+        text-align:center;
+        margin-top:15px;
+       }
+
+       .submit button, .back button{
+        width:100%;
+       }
+
+       ul{
+        padding-left:10px;
+        padding-right:10px;
+       }
+
+       #menu ul li{
+        display:block;
+        text-align:center;
+        padding:8px 0;
+       }
+
+       #logo, #little_menu{
+        text-align:center;
+        display:block;
+       }
+
+       #little_menu ul li{
+        display:inline-block;
+        margin:0 5px;
+       }
+
+       #text, #text1{
+        font-size:16px;
+        padding:0 10px;
+       }
+    }
+
+    @media only screen and (max-width: 480px){
+
+       .submit, .back{
+        width:100%;
+        margin-bottom:10px;
+       }
+
+       #place ul{
+        font-size:14px;
+       }
+
+       #menu ul li{
+        font-size:14px;
+       }
+    }
+
+        </style>
+
+</head>
+<body id="page">
+    <header>
+        <div id="logo"><img src="img1/logo1.webp" width="200" height="75"></div>
+
+        <div id="little_menu">
+            <ul>
+                <li>로그인 |</li>
+                <li>회원가입 |</li>
+                <li>검색</li>
+            </ul>
+        </div>
+      
+        <div class="clear"></div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" style="color:black; text-decoration:none;">메인</a></li>
+                <li><a href="page1.html" style="color:black; text-decoration:none;">성격 테스트 검사</a></li>
+                <li><a href="page2.html" style="color:black; text-decoration:none;">고양이 상식</a></li>
+                <li><a href="page3.html" style="color:black; text-decoration:none;">키우는 팁</a></li>
+                <li><a href="page4.html" style="color:black; text-decoration:none;">사진 갤러리</a></li>
+                <li>입양하기</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h3 id="text">① &nbsp;회원가입</b> &nbsp;>&nbsp; ② &nbsp;<b class="line">입양 신청서 작성</b> &nbsp;>&nbsp; ③ &nbsp;신청 완료</h3>
+        <br>
+        <h3 id="text1">②&nbsp;입양 신청서 작성</h3>
+        <article id="sty">
+            <ul>
+                <li><h3>1. 기본 정보</h3></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이름: &nbsp;<input type="text"></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;생년월일: &nbsp;<input type="date" style="width:133px;"></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소:&nbsp;<textarea cols="50" style="height:20px; padding-top:1px;"></textarea></li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>2. 거주 형태</h3></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주거 형태:&nbsp; 
+                    <input type="radio" name="home">아파트&nbsp;&nbsp;
+                    <input type="radio" name="home">빌라&nbsp;&nbsp;
+                    <input type="radio" name="home">전원주택
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;집 소유 여부:&nbsp; 
+                    <input type="radio" name="home">자가&nbsp;&nbsp;
+                    <input type="radio" name="home">전세&nbsp;&nbsp;
+                    <input type="radio" name="home">월세</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함께 거주하는 인원 수:&nbsp;
+                    <input type="number" style="width:40px;">
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;본인 및 동거인 알레르기 여부:&nbsp;
+                    동거인 중 알레르기 보유<input type="number" style="width:40px;">(명)
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>3. 입양 동기 및 준비 상태</h3></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;입양 이유:&nbsp;
+                    <textarea rows="3" cols="60"></textarea>
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;과거 반려동물 키움 유/무: &nbsp;
+                    <input type="radio" name="pet">유&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="pet">무
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현재 키우고 있는 반려동물:&nbsp;
+                    <input type="text" style="width:60px;">
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;예상하는 고양이 월 예산:&nbsp;
+                    <input type="text" style="width:60px;">(단위: 만)
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <li><h3>4. 서약 및 동의</h3></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="promise">
+                    나는 무슨 일이 있어도 끝까지 책임질 것을 맹세합니다.</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="promise">
+                    나는 고양이를 행복하게 해주기 위해 최선을 다 할 것을 맹세합니다.</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="promise">
+                    나는 고양이를 파양하거나 버리지 않을 것을 맹세합니다.</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="promise">
+                    위 서약을 어길 경우 최소 10억원의 배상을 물을 것을 약속합니다.</li>
+            </ul>
+            <br>
+            <div id="place">
+                <ul>
+                    <li>대표이사:&nbsp;<input type="text" style="width:80px; background-color:#f1ece3">(서명)</li>
+                    <li class="pad">본인:&nbsp;<input type="text" style="width:80px; background-color:#f1ece3">(서명)</li>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+            <br>
+            <ul>
+                <li class="submit"><button style="background-color:#f1ece3">
+                <a href="index.html" style="color:black; text-decoration:none;">제출</a></button></li>
+                <li class="back"><button style="background-color:#f1ece3">
+                <a href="page5.html" style="color:black; text-decoration:none;">뒤로</a></button></li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>

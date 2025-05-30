@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #page{
+            width:950px;
+            height:600px;
+            margin:0 auto;
+            background-color:#f1ece3;
+        }/*페이지 전체 옵션*/
+
+        .clear{
+            clear:both;
+        }
+
+        table{
+            margin-left:200px;
+            margin-top:5px;
+        }
+
+        td{
+            padding-bottom:10px;
+        }
+/*-----------------------------------------------------------------------------------------*/
+/*header 옵션*/
+        #logo{
+            margin-top:10px;
+            float:left;
+        }
+
+        #little_menu{
+            margin:25px 10px 0 0;
+            float:right;
+        }
+
+        #little_menu ul li{
+            display:inline;
+            font-family:"돋움";
+            font-size:14px;
+        }
+
+        #menu{
+            border-bottom:solid 1px black;
+        }
+        
+        #menu ul{
+            margin-top:30px;
+        }
+        #menu ul li{
+            font-weight:bold;
+            display:inline;
+            padding:5px 5px 5px 70px;
+            list-style-type:none;
+        }
+/*-----------------------------------------------------------------------------------------*/
+/*main 옵션*/
+        #text{
+            text-align:center;
+            font-weight:bold;
+            margin-top:10px;
+        }
+
+        #text1{
+            text-align:center;
+            font-weight:bold;
+            margin-bottom:0px;
+        }
+
+        .size{
+            font-size:12px;
+        }
+
+        td button{
+            margin-top:7px;
+            height:20px;
+        }
+
+        .line{
+            text-decoration:underline;
+        }
+
+        #custom{
+            list-style-type:none;
+            text-align:center;
+        }
+
+/*--------------------------------------------------------------------------------*/
+/*반응형 웹 사이트 옵션*/
+    @media only screen and (max-width: 920px) {
+        #page{
+            width:100%;
+            height:auto;
+        }
+
+        header, main, article{
+            width:100%;
+        }
+
+        table{
+            width:90%;
+            margin-left:5%;
+            margin-right:5%;
+        }
+
+        td{
+            display:block;
+            width:100%;
+            padding-bottom:15px;
+        }
+
+        td.size{
+            text-align:left;
+            margin-top:5px;
+        }
+
+        td button{
+            display:inline-block;
+            margin-top:5px
+        }
+
+        #text, #text1{
+            font-size:16px;
+            padding:0 10px;
+        }
+
+        ul#custom li{
+            text-align:left;
+            margin-left:10px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+
+        td{
+            padding-bottom:20px;
+        }
+
+        td button{
+            width:100%;
+        }
+
+       #little_menu ul li{
+            display:block;
+            text-align:center;
+            margin-bottom:5px;
+        }
+
+       #menu ul li{
+           display:block;
+           text-align:center;
+           padding:10px 0;
+        }
+}
+/*----------------------------------------------------------------------------------------------------*/
+        </style>
+
+</head>
+<body id="page">
+    <header>
+        <div id="logo"><img src="img1/logo1.webp" width="200" height="75"></div>
+
+        <div id="little_menu">
+            <ul>
+                <li>로그인 |</li>
+                <li>회원가입 |</li>
+                <li>검색</li>
+            </ul>
+        </div>
+      
+        <div class="clear"></div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" style="color:black; text-decoration:none;">메인</a></li>
+                <li><a href="page1.html" style="color:black; text-decoration:none;">성격 테스트 검사</a></li>
+                <li><a href="page2.html" style="color:black; text-decoration:none;">고양이 상식</a></li>
+                <li><a href="page3.html" style="color:black; text-decoration:none;">키우는 팁</a></li>
+                <li><a href="page4.html" style="color:black; text-decoration:none;">사진 갤러리</a></li>
+                <li>입양하기</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <article>
+        <h3 id="text">① &nbsp;<b class="line">회원가입</b> &nbsp;>&nbsp; ② &nbsp;입양 신청서 작성 &nbsp;>&nbsp; ③ &nbsp;신청 완료</h3>
+        <br>
+        <h3 id="text1">①&nbsp;회원가입</h3>
+        <table>
+            <tr>
+                <td>아이디: &nbsp;<input type="text"  style="width:252px;"></td>
+                <td class="size">*한글, 영문, 숫자, 특수기호를 포함 13자 이내</td>
+            </tr>
+
+            <tr>
+                <td>비밀번호: &nbsp;<input type="password"  style="width:238px;"></td>
+                <td class="size">*한글, 영문, 숫자, 특수기호를 포함 13자 이내</td>
+            </tr>
+                
+            <tr>
+                <td>비밀번호 확인: &nbsp;<input type="password" style="width:205px;"></td>
+                <td class="size">*한글, 영문, 숫자, 특수기호를 포함 13자 이내</td>
+            </tr>
+
+            <tr>
+                <td>통신사: &nbsp; SKT<input type="radio" name="phone">&nbsp;&nbsp;
+                                  KT<input type="radio" name="phone">&nbsp;&nbsp;
+                                  LG<input type="radio" name="phone">&nbsp;&nbsp;
+                                  알뜰폰<input type="radio" name="phone">
+                </td>
+            </tr>
+        
+            <tr>
+                <td>전화번호: &nbsp;<select>
+                    <option>010</option>
+                    <option>031</option>
+                    <option>070</option>
+                    </select>&nbsp;<input type="text" style="width:90px;">-<input type="text" style="width:90px;"><br>
+                    인증번호: &nbsp;<input type="text">
+                </td>
+                <td><button style="margin-bottom:25px;">인증번호 전송</button></td>
+            </tr>
+
+            <tr>
+                <td>이메일: &nbsp;<input type="text" style="width:130px;">&nbsp;@
+                    <select>
+                        <option>선택</option>
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>hanmail.net</option>
+                        <option>daum.net</option>
+                        <option>gachon.ac.kr</option>
+                    </select>
+                </td>
+             </tr>
+            
+             <tr>
+                <td>
+                    <ul id="custom">
+                        <li>개인정보 수집동의<input type="radio">&nbsp;&nbsp;&nbsp;
+                            약관 내용 확인<input type="radio">
+                        </li>
+                    </ul>
+                </td>
+             </tr>
+
+             <tr>
+                <td>&nbsp;</td>
+                <td style="float:right;"><button style="background-color:#f1ece3;">
+                <a href="page5_sub1.html" style="text-decoration:none; color:black;">
+                    다음</a></button>
+                </td>
+             </tr>
+        </table>
+    </article>
+    </main>
+</body>
